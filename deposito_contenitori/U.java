@@ -1,7 +1,6 @@
 package deposito_contenitori;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class U{
 
@@ -16,7 +15,5 @@ public class U{
            }
     return arr;
     }
-
-
 
 }
