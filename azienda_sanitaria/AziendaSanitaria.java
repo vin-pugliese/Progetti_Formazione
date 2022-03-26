@@ -90,12 +90,9 @@ public class AziendaSanitaria {
             throw e;
         }
         Doctor d = new Doctor();
-        d.setNumberOfPatients(0);
         for(Doctor c:doctors)
             if (c.getNumberOfPatients()>d.getNumberOfPatients()) {
-                d.setName(c.getName());
-                d.setId(c.getId());
-                d.setNumberOfPatients(c.getNumberOfPatients());
+                d = c;
             }
 
         System.out.print("Il dottore con il maggior numero di pazienti è: ");

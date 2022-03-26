@@ -11,6 +11,7 @@ public class Doctor {
     public Doctor(int id, String name) {
         this.id = id;
         this.name = name;
+        this.numberOfPatients =0;
     }
 
     public Doctor(int id, String name, int numberOfPatients) {

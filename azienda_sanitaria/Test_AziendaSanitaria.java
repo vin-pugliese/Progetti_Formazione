@@ -11,10 +11,10 @@ public class Test_AziendaSanitaria {
         Doctor d4 = new Doctor(4, "Antonio");
         Doctor d5 = new Doctor(5, "Giacomo");
 
-        Patient p1 = new Patient(123, 2);
-        Patient p2 = new Patient(456, 2);
-        Patient p3 = new Patient(789, 2);
-        Patient p4 = new Patient(101, 1);
+        Patient p1 = new Patient(123, 3);
+        Patient p2 = new Patient(456, 3);
+        Patient p3 = new Patient(789, 3);
+        Patient p4 = new Patient(101, 2);
         Patient p5 = new Patient(123, 4);
         Patient p6 = new Patient(123, 3);
         Patient p7 = new Patient(000, 6);
@@ -50,7 +50,7 @@ public class Test_AziendaSanitaria {
         a.printPatients();
 
         //test metodo listaMedico
-        System.out.println("\nLista pazienti del dottor d1\n");
+        System.out.println("\nLista pazienti del dottor d2\n");
         List<Patient> l = a.listaMedico(d2);
 
         for(Patient p:l)                        //stampa il risultato del metodo ListaMedico
