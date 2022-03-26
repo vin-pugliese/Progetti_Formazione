@@ -62,7 +62,7 @@ public abstract class C implements CMP, TI {
             System.out.println("I liquidi hanno eguale tossicità");
             return false;
         }
-        if((this.getIndex().equals(Toxic_index.LOW)) && ((y.getIndex().equals(Toxic_index.MEDIUM) || (y.getIndex().equals(Toxic_index.HIGH))))){
+        if(this.getIndex().equals(Toxic_index.LOW)){
             System.out.println("Liquido 2 è più tossico");
             return true;
         }
