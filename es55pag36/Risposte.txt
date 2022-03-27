@@ -1,0 +1,29 @@
+
+Indicare l’output del programma. Se un’istruzione provoca un errore di compilazione,
+specificarlo e poi continuare l’esercizio ignorando quell’istruzione. (16 punti)
+
+
+public class Test {
+public static void main(String[] args) {
+A[] arr = new B[10];
+C gamma = new C();
+B beta = gamma;
+A alfa = gamma;
+System.out.println(beta.f(gamma,arr)); ->Genera un errore, non esiste in nessuna classe un metodo String f(C x, Object[] y) - necessario casting dei parametri
+System.out.println(gamma.f(arr,alfa));
+System.out.println(gamma.f(beta,alfa));
+System.out.println(5 | 7);
+
+output:
+A2
+C2
+7
+
+Per ogni chiamata ad un metodo (escluso System.out.println) indicare la lista delle firme
+candidate
+System.out.println(beta.f(gamma,arr)); -> Errata
+System.out.println(gamma.f(arr,alfa)); -> A.f(Object x, Object y)
+System.out.println(gamma.f(beta,alfa)); -> C.f(B x, Object y
+
+}
+
