@@ -21,7 +21,7 @@ C2
 
 Per ogni chiamata ad un metodo (escluso System.out.println) indicare la lista delle firme
 candidate
-System.out.println(beta.f(gamma,arr)); -> Errata
+System.out.println(beta.f(gamma,arr)); -> Errata - Richiama String B.f(B x, Object y) se castiamo il 1° parametro ad un B, richiama A.f(Object x, Object y) se lo castiamo ad A
 System.out.println(gamma.f(arr,alfa)); -> A.f(Object x, Object y)
 System.out.println(gamma.f(beta,alfa)); -> C.f(B x, Object y)
 
